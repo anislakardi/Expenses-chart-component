@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Geologica:wght@500;600&display=swap');
+
+:root{
+  /*color*/
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+  /*font*/
+  --font-family: "DM sans",sans-serif;
+  --font-size: 18px;
+}
+ *{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+ }
+ body{
+  font-family: var(--font-family);
+  background-color: var(--Cream);
+ }
+ .total_mony{
+  display: grid;
+  grid-template-columns: auto 0 auto;
+  border: 0px;
+  background-color: var(--Soft-red);
+  border-radius: 15px;
+  width: 500px;
+  height: 100px;
+  transform: translate(-50%,-50%);
+  position: fixed;
+  top: 22%;
+  left: 50%;
+}
+.spending_class{
+  display: grid;
+  border: 0px;
+  background-color: var(--Very-pale-orange);
+  border-radius: 15px;
+  width: 500px;
+  height: 450px;
+  transform: translate(-50%,-50%);
+  position: fixed;
+  top: 62%;
+  left: 50%;
+  grid-template-areas:
+  "titel2 titel2 titel2 titel2 titel2 titel2 titel2"
+  "days days days days days days days"
+  "line line line line line line line"
+  "p1 p1 p1 p1 p1 p1 p1"
+  "total2 minitotal minitotal minitotal minitotal minitotal minitotal"
+  "total2 pa pa pa pa pa pa"
+  ;
+  color: var(--Dark-brown);
+}              
+#logo{
+padding-top: 27px;
+padding-left: 240px;
+}
+#title1{
+  color: var(--Very-pale-orange);
+  padding-top: 15px;
+  padding-left: 30px;
+}
+#total1{
+  color: var(--Very-pale-orange);
+  padding-left: 30px;
+  padding-top: 45px;
+  margin-left: -163px;
+}
+/*///////////*/
+#titel2{
+ grid-area: titel2;
+ padding-left: 40px;
+ padding-top: 30px;
+ margin-bottom: 100px;
+}
+#mon{
+  grid-area: mon;
+  padding-left: 40px;
+  padding-right: 35px;
+ }
+#tue{
+  grid-area: tue;
+  padding-right: 35px;
+ }
+ #wed{
+  grid-area: wed;
+  padding-right: 35px;
+ }
+ #thu{
+  grid-area: thu;
+  padding-right: 35px;
+ }
+ #fri{
+  grid-area: fri;
+  padding-right: 35px;
+ }
+ #sat{
+  grid-area: sat;
+  padding-right: 35px;
+ }
+ #sun{
+  grid-area: sun;
+  padding-bottom: 30px;
+ }
+ #total2{
+  grid-area: total2;
+  padding-left: 35px;
+  padding-right: -500px;
+ }
+ #minitotal{
+  grid-area: minitotal;
+  font-size: 19px;
+  margin-left: -50px;
+ }
+ #p2{
+  grid-area: pa;
+  color: var(--Medium-brown);
+  font-size: 12px;
+ padding-bottom: 100px;
+ margin-left: -90px;
+ }
+ #p1{
+  grid-area: p1;
+  color: var(--Medium-brown);
+  padding-top: 30px;
+  padding-left: 30px;
+  font-size: 12px;
+ }
+ #line{
+  grid-area: line;
+  width: 387px;
+  height: 1px;
+  margin-left: 50px;
+ }
+.days{
+  display: grid;
+  grid-template-areas: 
+  "b1 b2 b3 b4 b5 b6 b7"
+  "mon tue wed thu fri sat sun"
+  ;
+}
+#b1{
+  grid-area: b1;
+  background-color: var(--Soft-red);
+  width: 40px;
+  height: 40px;
+  border: 0px;
+  border-radius: 5px;
+  margin-left: 40px;
+  margin-top: 60px;
+  cursor: pointer;
+ }
+#b2{
+  grid-area: b2;
+  background-color: var(--Soft-red);
+  width: 40px;
+  height: 80px;
+  border: 0px;
+  border-radius: 5px;
+  padding-right: 35px;
+  margin-left: -7px;
+  margin-top: 20px;
+  cursor: pointer;
+ }
+ #b3{
+  grid-area: b3;
+  background-color: var(--Soft-red);
+  width: 40px;
+  height: 140px;
+  border: 0px;
+  border-radius: 5px;
+  padding-right: 35px;
+  margin-left: -5px;
+  margin-top: -40px;
+  cursor: pointer;
+ }
+ #b4{
+  grid-area: b4;
+  background-color: var(--Soft-red);
+  width: 40px;
+  height: 70px;
+  border: 0px;
+  border-radius: 5px;
+  padding-right: 35px;
+  margin-left: -7px;
+  margin-top: 30px;
+  cursor: pointer;
+ }
+ #b5{
+  grid-area: b5;
+  background-color: var(--Soft-red);
+  width: 40px;
+  height: 60px;
+  border: 0px;
+  border-radius: 5px;
+  padding-right: 35px;
+  margin-left: -8px;
+  margin-top: 40px;
+  cursor: pointer;
+ }
+ #b6{
+  grid-area: b6;
+  background-color: var(--Soft-red);
+  width: 40px;
+  height: 100px;
+  border: 0px;
+  border-radius: 5px;
+  padding-right: 35px;
+  margin-left: -5px;
+  cursor: pointer;
+ }
+ #b7{
+  grid-area: b7;
+  background-color: var(--Soft-red);
+  width: 40px;
+  height: 65px;
+  border: 0px;
+  border-radius: 5px;
+  padding-right: 35px;
+  margin-left: -7px;
+  margin-top: 35px;
+  cursor: pointer;
+ }
+ #b3:hover{
+  background-color: var(--Cyan);
+ }
